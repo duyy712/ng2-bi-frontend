@@ -8,7 +8,11 @@
     <link href="../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
     <link href="../styles.css" rel="stylesheet">
 </head>
+
 <body>
+    <nav>
+        <a [routerLink]="['/login']" routerLinkActice="active" [hidden]="error">Login</a>
+    </nav>
     <h2> Login Page</h2>
     <form [(ngFormModel)]="loginForm">
         <label for="username">Username: </label>
@@ -16,10 +20,10 @@
         <label for="password">Password: </label>
         <input ngControl="password" type="password"><span *ngIf="!ctrlPwd.valid"> [required] </span><br>
         <button type="button" class="btn btn-primary" (click)=onSubmit()>Submit</button>
-     
+
     </form>
-    <pre> {{getValue()}}</pre>   
-       
+    <pre> {{getValue()}}</pre>
+
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"> </script>
 </body>

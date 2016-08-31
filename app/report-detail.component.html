@@ -1,0 +1,18 @@
+<div *ngIf="report">
+  <h2>{{report.Name}}</h2>
+  <div>
+    <div>$id: {{report.$id}}</div>
+    <div>$type: {{report.$type}}</div>
+    <div>AutoLoad: {{report.AutoLoad}}</div>
+    <div>CanEditNorm: {{report.CanEditNorm}}</div>
+    <div>Code: {{report.Code}}</div>
+    <div>CreatedAt: {{report.CreatedAt}}</div>
+    <div>Description: {{report.Description}}</div>
+    <div>Source: {{report.Source}}</div>
+    <div>Visible: {{report.Visible}}</div>
+
+    <!--, ID: number, AutoLoad: boolean, CanEditNorm: boolean, p Code: string, CreatedAt: any, CreatedById: any, CreatedByName: string,
+    Description: string, DisplayTemplate: string, ModifiedAt: Date, ModifiedById: string, ModifiedByName: string, Name: string,
+    ReportGroupId: string, ReportPages: any, Source: string, SourceType: string, UserReportSettings: any, Visible: boolean-->
+  </div>
+</div>

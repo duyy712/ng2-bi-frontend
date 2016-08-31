@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+	<div>
+		<ul class="list-group">
+			<li class="list-group-item" *ngFor="let report of reports">
+			<!--<a [routerLink]="['/detail', report.Id]">	{{report.Name}}</a>-->
+			{{report.Name}}
+				<button type="button" class="btn btn-outline-info btn-sm" style="float:right" (click)="gotoDetail(report)">Details</button>
+			</li>
+		</ul>
+	</div>
+
+	<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
